@@ -1,0 +1,19 @@
+<section class="contact-section" id="contact">
+  <h2>Get in Touch</h2>
+  <p>Have a question or need help? We'd love to hear from you.</p>
+
+  <form [formGroup]="contactForm" (ngSubmit)="submitForm()" class="contact-form">
+    <input type="text" placeholder="Your Name" formControlName="name" />
+    <div *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid" class="error">Name is required.</div>
+
+    <input type="email" placeholder="Your Email" formControlName="email" />
+    <div *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid" class="error">
+      Valid email is required.
+    </div>
+
+    <textarea rows="5" placeholder="Your Message" formControlName="message"></textarea>
+    <div *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid" class="error">Message is required.</div>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>

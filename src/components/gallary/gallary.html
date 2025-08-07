@@ -1,0 +1,12 @@
+<div class="gallery-wrapper">
+  <div class="gallery-grid">
+    <div class="gallery-item" *ngFor="let pair of galleryImages">
+      <img [src]="pair.before" alt="Before" />
+      <div class="label">BEFORE</div>
+    </div>
+    <div class="gallery-item" *ngFor="let pair of galleryImages">
+      <img [src]="pair.after" alt="After" />
+      <div class="label">AFTER</div>
+    </div>
+  </div>
+</div>

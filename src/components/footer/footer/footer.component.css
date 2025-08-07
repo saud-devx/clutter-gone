@@ -1,0 +1,122 @@
+.footer{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+}
+.footer h2{
+    margin-bottom: 20px;
+    font-family: "Jost", Sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #000000;
+}
+.footer-outer{
+    background-color: #eeeeee;
+    padding: 60px 0px 40px 0px;
+}
+.footer-blocks{
+    width: 25%;
+}
+.first-block{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    min-height: 1px;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+}
+.logo{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.first-block p{
+    font-family: "Jost", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #000000;
+}
+.first-block i{
+    color: #4c2d93;
+    margin-right: 27px;
+    font-size: 18px;
+}
+.second-block{
+    margin-left: 70px;
+    padding: 10px;
+}
+
+.footer-quick-links{
+    font-family: "Jost", Sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.third-block{
+    padding: 10px;
+}
+.fourth-block{
+    padding: 10px !important;
+}
+.details{
+    display: flex;
+    padding-bottom: 15px;
+    margin-top: 15px;
+    align-items: center;
+}
+.details-icons{
+    padding-inline-end: 10px;
+}
+.details-icons i{
+    background-color: #4f2f91 !important;
+    width: 50px !important;
+    height: 50px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 50% !important;
+    color: white;
+    size: 17px;
+}
+
+.last-links{
+    padding-inline-start: 5px;
+    font-size: 17px !important;
+}
+.footer-end{
+    padding: 15px 0px 15px 0px;
+}
+.footer-end div {
+    padding: 10px;
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+}
+.footer-end h2{
+        font-family: "Jost", Sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #000000;
+}
+@media only screen and (max-width: 768px){
+    .footer{
+        flex-direction: column;
+    }
+    .footer-blocks{
+        width: 100%;
+    }
+    .logo-div{
+        width: 100%;
+    }
+    .second-block{
+        margin-left: 0  ;
+    }
+}

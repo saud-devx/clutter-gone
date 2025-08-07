@@ -1,0 +1,53 @@
+<header class="site-header">
+  <div class="logo-nav container">
+    <div class="logo-trust">
+      <img src="assets/logo.png" alt="Clutter B Gone Logo" class="site-logo" />
+
+      <div class="trustpilot">
+        <a
+          href="https://www.trustpilot.com/review/clutter-b-gone.com?utm_medium=trustbox&utm_source=TrustBoxReviewCollector"
+          class="trustpilot-btn"
+        >
+          <span>Review us on</span>
+          <img src="assets/star.png" alt="Trustpilot" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Hamburger (only shows on mobile) -->
+    <div class="hamburger" (click)="toggleMenu()" *ngIf="!menuOpen">
+      &#9776;
+    </div>
+
+    <!-- Close Icon -->
+    <div class="close-btn" (click)="toggleMenu()" *ngIf="menuOpen">
+      &times;
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="main-nav" [class.open]="menuOpen">
+      <ul>
+        <li><a routerLink="/home" routerLinkActive="active" (click)="closeMenu()">Home</a></li>
+        <li><a routerLink="/about" routerLinkActive="active" (click)="closeMenu()">About Us</a></li>
+        <li><a routerLink="/team" routerLinkActive="active" (click)="closeMenu()">Meet The Team</a></li>
+        <li><a routerLink="/pricing" routerLinkActive="active" (click)="closeMenu()">Pricing</a></li>
+        <li><a routerLink="/services" routerLinkActive="active" (click)="closeMenu()">Services</a></li>
+        <li><a routerLink="/gallery" routerLinkActive="active" (click)="closeMenu()">Gallery</a></li>
+        <li><a routerLink="/faqs" routerLinkActive="active" (click)="closeMenu()">FAQs</a></li>
+        <li><a routerLink="/testimonials" routerLinkActive="active" (click)="closeMenu()">Testimonials</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Carousel right after header -->
+<section class="hero-carousel">
+  <div class="hero-slide" *ngIf="currentSlide === 0">
+    <img src="assets/carousel.jpg" alt="Hero Image" />
+    <div class="hero-text">
+      <h1>Professional Organising</h1>
+      <p>in your Home</p>
+      <button>Contact Us Today</button>
+    </div>
+  </div>
+</section>
