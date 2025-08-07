@@ -10,7 +10,7 @@ import { FooterComponent } from '../components/footer/footer/footer.component';
   declare var bootstrap: any;
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, FooterComponent, HomeIntro, HomeServicesSummary, HomeGallery, ContactForm, HomeHero],
+  imports: [ Header, FooterComponent, HomeIntro, HomeServicesSummary, HomeGallery, ContactForm, HomeHero],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
