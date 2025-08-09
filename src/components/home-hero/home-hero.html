@@ -1,8 +1,21 @@
-<section class="hero">
-  <img src="assets/carousel.jpg" alt="Boxes and cleaning tools" class="hero-img" />
-  <div class="hero-text">
-    <h1>Professional Organising</h1>
-    <p>in your Home</p>
-    <a class="btn" href="#contact">Contact Us</a>
-  </div>
-</section>
+<p-carousel 
+  [value]="products" 
+  [numVisible]="1" 
+  [numScroll]="1" 
+  [circular]="true" 
+  [autoplayInterval]="10000"
+  [showIndicators]="true" 
+  [showNavigators]="false"
+>
+  <ng-template let-product pTemplate="item">
+    <div class="carousel-slide">
+      <img [src]="product.image" [alt]="product.name" />
+      <div class="overlay"></div>
+      <div class="carousel-center">
+        <h2 class="heading">Professional Organising</h2>
+        <p class="subheading">in your Home</p>
+        <button class="cta-btn">Contact Us Today</button>
+      </div>
+    </div>
+  </ng-template>
+</p-carousel>

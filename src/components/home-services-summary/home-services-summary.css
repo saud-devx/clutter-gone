@@ -1,24 +1,69 @@
-.services-summary {
-  background: #f4f4f4;
-  padding: 2rem;
-  text-align: center;
-  h2 {
-    margin-bottom: 1rem;
+.service-section {
+  position: relative;
+  background: url('/assets/carousel-images/2.jpeg') no-repeat center center/cover;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.service-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* shadow overlay */
+  z-index: 1;
+}
+
+.service-section .overlay {
+  position: relative;
+  z-index: 2; /* keeps content above overlay */
+  max-width: 900px;
+}
+
+.service-section h2 {
+  font-weight: 700;
+}
+
+.service-section .section-divider {
+  width: 60px;
+  border: 2px solid #fff;
+  margin-bottom: 20px;
+}
+
+.service-section ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-section {
+    min-height: auto;
+    padding: 20px 0;
   }
-  ul {
-    text-align: left;
-    max-width: 700px;
-    margin: 0 auto;
-    li {
-      margin-bottom: 0.5rem;
-    }
+
+  .service-section .overlay {
+    padding: 20px;
   }
-  .btn {
-    margin-top: 1rem;
-    display: inline-block;
-    background-color: #00a8cc;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
+
+  .service-section h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .service-section ul li {
+    font-size: 0.95rem;
+  }
+
+  .service-section .btn {
+    width: 100%;
   }
 }

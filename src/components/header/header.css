@@ -4,6 +4,40 @@
   border-bottom: 1px solid #eee;
   padding: 1rem;
 }
+ .trustpilot-button {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 4px;
+      border: 1px solid #00b67a;
+      background-color: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      width: 100%;
+      box-sizing: border-box;
+      justify-content: center;
+    }
+    .trustpilot-button:hover {
+      background-color: #e9f5e9;
+    }
+    .trustpilot-button .star {
+      color: #28a745;
+      margin-right: 5px;
+    }
+    @media (max-width: 767px) {
+      .trustpilot-button {
+        font-size: 10px;
+        padding: 4px ;
+        width: max-content;
+      }
+    }
+    @media (min-width: 768px) {
+      .trustpilot-button {
+        width: auto;
+      }
+    }
 
 .logo-nav {
     display: flex

@@ -6,11 +6,11 @@ import { HomeServicesSummary } from "../components/home-services-summary/home-se
 import { HomeGallery } from "../components/home-gallery/home-gallery";
 import { ContactForm } from "../components/contact-form/contact-form";
 import { HomeHero } from "../components/home-hero/home-hero";
-import { FooterComponent } from '../components/footer/footer/footer.component';
+import { FooterComponent } from "../components/footer/footer.component";
   declare var bootstrap: any;
 @Component({
   selector: 'app-root',
-  imports: [ Header, FooterComponent, HomeIntro, HomeServicesSummary, HomeGallery, ContactForm, HomeHero],
+  imports: [Header, HomeIntro, HomeServicesSummary, HomeGallery, ContactForm, HomeHero, FooterComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
