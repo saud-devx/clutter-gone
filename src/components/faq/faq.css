@@ -1,0 +1,83 @@
+/* General FAQ section styling */
+.faq {
+  max-width: 90%;
+  margin: auto;
+  padding: 100px 0;
+}
+
+.faq-accordion-body{
+    border: 1px solid #dddddd;
+}
+
+.faq-heading h2 {
+    text-align: center;
+    margin-bottom: 70px;
+    font-family: "Roboto", Sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #4F2F91;
+}
+
+/* Accordion item styling */
+.accordion-item {
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-button {
+  background-color: white;
+    color: #4F2F91;
+
+  box-shadow: none;
+  border-radius: 0;
+  padding: 1.25rem;
+      font-family: "Roboto", Sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 1rem;
+  height: 2rem;
+  content: "+";
+  font-size: 30px;
+  color: #4F2F91;;
+  background-image: none !important;
+  transform: rotate(0deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed)::after {
+  content: "–";
+  font-size: 30px;
+  color: #4F2F91;;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+    color: black;
+    border-top: 1px solid #dddddd;
+    background: white;
+    padding: 1rem 1.25rem;
+    color: #000000;
+    font-family: "Poppins", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+/* Divider line between accordion items */
+.accordion-item + .accordion-item {
+  border-top: none;
+}
+
+/* Hover effect */
+.accordion-button:hover {
+  background-color: #fafafa;
+}
