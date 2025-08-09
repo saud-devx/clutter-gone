@@ -5,8 +5,8 @@ import { Team } from '../components/team/team';
 import { Pricing } from '../components/pricing/pricing';
 import { Services } from '../components/services/services';
 import { Gallary } from '../components/gallary/gallary';
-import { Faq } from '../components/faq/faq';
 import { Testimonials } from '../components/testimonials/testimonials';
+import { Faq } from '../components/faq/faq';
 
 export const routes: Routes = [
   { path: '', component: Home },
