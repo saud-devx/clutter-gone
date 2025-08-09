@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { TopBannerComponent } from "../top-banner/top-banner.component";
 
 
 @Component({
   selector: 'app-about',
-  imports: [],
+  imports: [TopBannerComponent],
   templateUrl: './about.html',
   styleUrl: './about.css'
 })

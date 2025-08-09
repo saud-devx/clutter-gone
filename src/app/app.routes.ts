@@ -16,6 +16,7 @@ export const routes: Routes = [
   { path: 'services', component: Services },
   { path: 'gallery', component: Gallary },
   { path: 'faqs', component: Faq },
+  { path: 'sevices', component: Services },
   { path: 'testimonials', component: Testimonials },
   { path: '**', redirectTo: '' }
   ];

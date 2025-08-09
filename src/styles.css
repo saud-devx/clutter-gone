@@ -1,4 +1,12 @@
-
 html {
   scroll-behavior: smooth;
+}
+
+:root {
+  --accent-purple: #5b2cae;
+  /* change to match screenshot */
+  --dark-overlay: rgba(0, 0, 0, 0.55);
+  --text-muted: #3d3d3d;
+  --card-bg: #4ec3e0;
+  --hover-purple: #4f2f91;
 }
