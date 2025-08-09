@@ -73,6 +73,9 @@
   .hamburger, .close-btn {
     display: block;
   }
+  .hamburger{
+    font-size: 1.5rem !important;
+  }
 
   .main-nav {
     max-height: 0;
