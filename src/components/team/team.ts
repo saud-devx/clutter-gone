@@ -106,7 +106,7 @@ teamMembers = [
     role: '',
     bio: 'Annie has a passion for helping others and staying organised. After years of teaching, she realised her favourite part was creating calm from chaos. She’s now bringing that skill to new adventures, using her experience to support people, solve problems and make life a little easier, one task at a time.',
     areas: 'Kent and London',
-    image: 'assets/team/10015.pngf'
+    image: 'assets/team/10015.png'
   }
 ];
 
