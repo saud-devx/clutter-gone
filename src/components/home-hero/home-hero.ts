@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { CarouselModule } from 'primeng/carousel';
 
 @Component({
   selector: 'app-home-hero',
-  imports: [CarouselModule],
+  imports: [CarouselModule,RouterLink],
   templateUrl: './home-hero.html',
   styleUrl: './home-hero.css'
 })

@@ -7,6 +7,7 @@ import { Services } from '../components/services/services';
 import { Gallary } from '../components/gallary/gallary';
 import { Testimonials } from '../components/testimonials/testimonials';
 import { Faq } from '../components/faq/faq';
+import { ContactForm } from '../components/contact-form/contact-form';
 
 export const routes: Routes = [
 
@@ -18,5 +19,6 @@ export const routes: Routes = [
   { path: 'gallery', component: Gallary},
   { path: 'faqs', component: Faq },
   { path: 'testimonials', component: Testimonials  },
+  { path: 'contact', component: ContactForm  },
   { path: '**', redirectTo: '' }
   ];
