@@ -120,3 +120,6 @@
         margin-left: 0  ;
     }
 }
+div a{
+    cursor: pointer;
+}

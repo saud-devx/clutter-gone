@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { LayoutComponent } from "../components/layout/layout.component";
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -9,5 +11,8 @@ import { LayoutComponent } from "../components/layout/layout.component";
 })
 export class App  {
   protected title = 'clutter-b-gone-clone';
+  pageTitle: string = '';
+
+  constructor( private router: Router){ }
 
 }

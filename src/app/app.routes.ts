@@ -9,14 +9,14 @@ import { Testimonials } from '../components/testimonials/testimonials';
 import { Faq } from '../components/faq/faq';
 
 export const routes: Routes = [
+
   { path: '', component: Home },
   { path: 'about', component: About },
   { path: 'team', component: Team },
   { path: 'pricing', component: Pricing },
   { path: 'services', component: Services },
-  { path: 'gallery', component: Gallary },
+  { path: 'gallery', component: Gallary},
   { path: 'faqs', component: Faq },
-  { path: 'sevices', component: Services },
-  { path: 'testimonials', component: Testimonials },
+  { path: 'testimonials', component: Testimonials  },
   { path: '**', redirectTo: '' }
   ];

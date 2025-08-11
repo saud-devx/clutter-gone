@@ -1,14 +1,12 @@
 <div class="gallery-container">
   <div class="gallery-grid">
-    <div class="gallery-pair" *ngFor="let pair of galleryImages">
-      <div class="gallery-item">
-        <img [src]="pair.before" alt="Before Image" />
-        <div class="label">BEFORE</div>
-      </div>
-      <div class="gallery-item">
-        <img [src]="pair.after" alt="After Image" />
-        <div class="label">AFTER</div>
-      </div>
+    <div class="gallery-item" *ngFor="let img of galleryImages">
+      <img [src]="img?.src" [alt]="img?.label + ' Image'" />
+      <div class="label">{{ img?.label }}</div>
     </div>
   </div>
 </div>
+<div class="read-more-container">
+  <a routerLink="/gallery" class="read-more-btn">READ MORE</a>
+</div>
+

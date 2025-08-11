@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TopBannerComponent } from "../top-banner/top-banner.component";
 
 @Component({
   selector: 'app-services',
-  imports: [CommonModule, ],
+  imports: [CommonModule, TopBannerComponent],
   templateUrl: './services.html',
   styleUrl: './services.css'
 })
@@ -17,4 +18,5 @@ export class Services {
     { title: 'HOME/PROBATE/OFFICE CLEARANCES', image: '../../assets/services-images/5.png' },
     { title: 'RENOVATIONS', image: '../../assets/services-images/6.png' }
   ];
+  
 }
