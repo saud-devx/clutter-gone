@@ -1,0 +1,42 @@
+.pricing-card {
+  background: #fff;
+  border-radius: 12px;
+  border: 2px solid #eee;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  border-color: #4f2f91;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
+}
+
+.pricing-card h2 {
+  font-size: 2rem;
+  margin: 15px 0;
+}
+
+.pricing-card p {
+  margin: 0;
+}
+
+.featured {
+  background-color: #4f2f91;
+  color: #fff;
+}
+
+.featured .text-muted {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.small-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+@media (max-width: 576px) {
+  .pricing-card h2 {
+    font-size: 1.5rem;
+  }
+}

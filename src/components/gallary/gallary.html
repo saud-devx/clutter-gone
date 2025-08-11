@@ -1,12 +1,22 @@
-<div class="gallery-wrapper">
-  <div class="gallery-grid">
-    <div class="gallery-item" *ngFor="let pair of galleryImages">
-      <img [src]="pair.before" alt="Before" />
-      <div class="label">BEFORE</div>
-    </div>
-    <div class="gallery-item" *ngFor="let pair of galleryImages">
-      <img [src]="pair.after" alt="After" />
-      <div class="label">AFTER</div>
-    </div>
+<app-top-banner></app-top-banner>
+<div class="container my-4">
+  <div class="row g-3">
+    <ng-container *ngFor="let pair of galleryImages">
+      <!-- Before Image -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="image-card">
+          <img [src]="pair.before" alt="Before">
+          <div class="label-overlay">BEFORE</div>
+        </div>
+      </div>
+
+      <!-- After Image -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="image-card">
+          <img [src]="pair.after" alt="After">
+          <div class="label-overlay">AFTER</div>
+        </div>
+      </div>
+    </ng-container>
   </div>
 </div>
